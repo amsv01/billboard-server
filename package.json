@@ -4,12 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Amin Mousavi <tigmin@gmail.com> (http://aminm.com)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "async": "2.4.1",
+    "body-parser": "1.17.2",
+    "compression": "1.6.2",
     "express-graphql": "0.6.6",
-    "pg": "6.2.3"
+    "knex": "0.13.0",
+    "lodash": "4.17.4",
+    "moment": "2.18.1",
+    "moment-jalaali": "0.6.1",
+    "pg": "6.2.3",
+    "q": "1.5.0",
+    "socket.io": "2.0.2"
+  },
+  "devDependencies": {
+    "chai": "4.0.1",
+    "chai-as-promised": "6.0.0",
+    "chai-http": "3.0.0",
+    "eslint": "3.19.0",
+    "mocha": "3.4.2",
+    "sinon": "2.3.2"
   }
 }
