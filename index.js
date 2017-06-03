@@ -1,7 +1,6 @@
 'use strict';
 
 const
-  devMode = (process.env.NODE_ENV !== 'production'),
   express = require('express'),
   graphqlHTTP = require('express-graphql'),
   app = express(),
@@ -21,8 +20,8 @@ const shouldCompress = (req, res) => {
 app.use(compression({
   filter: shouldCompress
 }));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
+//app.use(express.bodyParser());
+//app.use(express.methodOverride());
 
 
 var schema = buildSchema(`
@@ -38,7 +37,9 @@ var root = {
 app.use('/graphql', graphqlHTTP({
   schema: schema,
   rootValue: root,
-  graphiql: true,
+  graphiql: true
 }));
 
-app.listen(app.get('port'));
+app.listen(app.get('port'), () => {
+  console.log(`Server start listening on ${app.get('port')}`)
+});
