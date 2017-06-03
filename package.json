@@ -1,0 +1,15 @@
+{
+  "name": "billboard-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amin Mousavi <tigmin@gmail.com> (http://aminm.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express-graphql": "0.6.6",
+    "pg": "6.2.3"
+  }
+}
