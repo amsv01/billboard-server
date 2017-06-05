@@ -14,6 +14,10 @@ module.exports = {
   development: {
     client: 'pg',
     connection: 'postgres://localhost/billboard_dev',
+    pool: {
+      min: 2,
+      max: 10,
+    },
     migrations: {
       directory: __dirname + '/db/migrations'
     },
