@@ -1,4 +1,3 @@
-
 exports.up = (knex, Promise) => Promise.all([
   knex.raw('create extension if not exists "uuid-ossp"'),
   knex.schema.createTable('exchanges', (table) => {

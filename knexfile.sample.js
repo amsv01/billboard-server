@@ -1,5 +1,5 @@
 'use strict';
-//PG_CONNECTION_STRING=postgres://u_billboard_dev:123456@127.0.0.1:5432/billboard_dev
+//PG_CONNECTION_STRING=postgres://UserName@127.0.0.1:5432/bb_db
 module.exports = {
   test: {
     client: 'pg',
